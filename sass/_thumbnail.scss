@@ -1,0 +1,146 @@
+.thumbnail_h1 {
+    margin-bottom: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: .8;
+}
+
+.thumbnail {
+    margin-bottom: 50px;
+}
+
+.thumb_main img {
+    width: 100%;
+    height: auto;
+}
+
+.thumb .thumb_main:nth-child(2) {
+    display: none;
+}
+
+.thumb .thumb_main:nth-child(3) {
+    display: none;
+}
+
+.thumb_main {
+    margin: 0 auto;
+    margin-bottom: 60px;
+    width: 77%;
+    text-align: center;
+    line-height: 1.7;
+}
+
+
+.th {
+    margin-bottom: 31px;
+}
+
+.th_text a {
+    color: #000;
+    text-decoration: none;
+    line-height: 1.7;
+    font-weight: bold;
+}
+
+.th_price {
+    font-weight: bold;
+}
+
+.price {
+    margin-right: 10px;
+}
+
+.button {
+    height: 44px;
+    width: 213px;
+    border: 1px solid #b0ac9c;
+    margin: 0 auto;
+    color: #b0ac9c;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+}
+
+.button a {
+    color: #b0ac9c;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 480px) {
+
+    .thumb_main {
+        line-height: 1.7;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+	.thumbnail {
+        margin-bottom: 42px;
+    }
+
+    .thumb {
+        text-align: center;
+    }
+
+    .thumb_img {
+        margin-bottom: 26px;
+    }
+
+    .thumb_text {
+        font-size: 14px;
+    }
+
+    .thumb_all {
+        width: 83%;
+        margin: 0 auto;
+        margin-bottom: 37px;
+        font-size: 0px;
+    }
+
+    .thumb_main {
+        width: 33.3%;
+        padding: 0px 10px;
+        margin: 0;
+        line-height: 2;
+        display: inline-block;
+        vertical-align: top;
+
+    }
+
+    .thumb .thumb_main:nth-child(2) {
+        display: inline-block;
+    }
+
+    .thumb .thumb_main:last-child {
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    .thumbnail {
+        margin-bottom: 44px;
+    }
+
+    .thumb_all {
+        margin-bottom: 32px;
+    }
+
+    .thumb_main {
+        padding: 0px 14px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .thumb_main {
+        padding: 0px 17px;
+    }
+
+    .thumb_img {
+        margin-bottom: 32px;
+    }
+
+    .thumb_all {
+        margin-bottom: 34px;
+    }
+}

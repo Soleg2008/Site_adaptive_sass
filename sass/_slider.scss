@@ -1,0 +1,86 @@
+/*Slider*/
+
+.responsive {
+    margin-bottom: 35px;
+}
+
+.slider_baner1 {
+    height: 390px;
+    background: url(../images/baner.jpg) no-repeat left 25% top/cover;
+}
+
+.slider_baner2 {
+    height: 390px;
+    background: url(../images/baner1.jpg) no-repeat left 57% top/cover;
+}
+
+.dot li button {
+    padding: 0;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    vertical-align: middle;
+    text-decoration: none;
+    border: 0px;
+    border-radius: 50%;
+    background: #6c6c69;
+    font-size: 0px;
+    outline: 0;
+}
+
+.dot li {
+    margin-right: 10px;
+}
+
+.dot li:last-child {
+    margin-right: 0px;
+}
+
+.dot .slick-active button { /*активная точка*/
+    background: #000;
+}
+
+.dot li {
+    list-style: none;
+    display: inline-block;
+}
+
+.dot {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 24px;
+    z-index: 200;
+    width: 34px;
+    margin: 0 auto;
+}
+
+/*end Slider*/
+
+@media screen and (min-width: 480px) {
+
+    .slider_baner1 {
+        height: 390px;
+        background: url(../images/baner.jpg) no-repeat left 31% top/cover;
+    }
+
+    .slider_baner2 {
+        height: 390px;
+        background: url(../images/baner1.jpg) no-repeat left 28% top/cover;
+    }
+}
+@media screen and (min-width: 768px) {
+
+    .slider_baner1 {
+        height: 390px;
+        background: url(../images/baner.jpg) no-repeat left 50% top/cover;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    .slider_baner2 {
+        height: 390px;
+        background: url(../images/baner1.jpg) no-repeat left 45% top/cover;
+    }
+}

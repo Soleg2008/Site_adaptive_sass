@@ -1,0 +1,46 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: 'PT Sans', sans-serif;
+}
+
+.container {
+		min-width: 320px;
+        margin: 0 auto;
+        padding: 0px 15px;
+        	&:after {
+	display: table;
+	content: '';
+	clear: both;
+}
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.upper {
+	text-transform: uppercase;
+}
+
+.strike {
+	text-decoration: line-through;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	margin:0;
+}
+
+.listReset {
+	list-style: none;
+}

@@ -1,0 +1,33 @@
+@import "_mixins.scss";
+@import "_normalize.scss";
+@import "_base.scss";
+@import "_header.scss";
+@import "_slider.scss";
+@import "_thumbnail.scss";
+@import "_section_sale";
+@import "_footer.scss";
+
+
+@media screen and (min-width: 480px) {
+   }
+
+/*750*/
+@media screen and (min-width: 768px) {
+}
+
+/*970*/
+@media screen and (min-width: 992px) {
+
+    .sale__img {
+        height: 253px;
+        margin-bottom: 63px;
+    }
+}
+
+/*1170*/
+@media screen and (min-width: 1200px) {
+    
+}
+
+
+
