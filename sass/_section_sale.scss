@@ -28,7 +28,6 @@
     display: inline-block;
 }
 
-
 .sale_link {
     color: #000;
 }
@@ -47,6 +46,14 @@
         height: 192px;
         width: 79%;
         margin-bottom: 58px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    .sale__img {
+        height: 253px;
+        margin-bottom: 63px;
     }
 }
 

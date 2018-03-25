@@ -634,6 +634,10 @@ h1 {
   .slider_baner2 {
     height: 390px;
     background: url(../images/baner1.jpg) no-repeat left 45% top/cover; } }
+.thumbnail_flex_container {
+  display: flex;
+  justify-content: space-between; }
+
 .thumbnail_h1 {
   margin-bottom: 40px;
   text-align: center;
@@ -647,10 +651,10 @@ h1 {
   width: 100%;
   height: auto; }
 
-.thumb .thumb_main:nth-child(2) {
+.thumb_main:nth-child(2) {
   display: none; }
 
-.thumb .thumb_main:nth-child(3) {
+.thumb_main:last-child {
   display: none; }
 
 .thumb_main {
@@ -706,42 +710,40 @@ h1 {
     font-size: 14px; }
 
   .thumb_all {
-    width: 83%;
+    width: 79%;
     margin: 0 auto;
     margin-bottom: 37px;
     font-size: 0px; }
 
   .thumb_main {
     width: 33.3%;
-    padding: 0px 10px;
+    padding: 0;
     margin: 0;
-    line-height: 2;
-    display: inline-block;
-    vertical-align: top; }
+    margin-right: 20px;
+    line-height: 2; }
 
-  .thumb .thumb_main:nth-child(2) {
-    display: inline-block; }
+  .thumb_main:nth-child(2) {
+    display: block; }
 
-  .thumb .thumb_main:last-child {
-    display: inline-block; } }
+  .thumb_main:last-child {
+    display: block;
+    margin-right: 0; } }
 @media screen and (min-width: 992px) {
   .thumbnail {
     margin-bottom: 44px; }
 
   .thumb_all {
-    margin-bottom: 32px; }
-
-  .thumb_main {
-    padding: 0px 14px; } }
+    margin-bottom: 32px; } }
 @media screen and (min-width: 1200px) {
   .thumb_main {
-    padding: 0px 17px; }
+    margin-right: 34px; }
 
   .thumb_img {
     margin-bottom: 32px; }
 
   .thumb_all {
-    margin-bottom: 34px; } }
+    margin-bottom: 34px;
+    width: 80%; } }
 .section_sale {
   background-color: #fff;
   text-align: center; }
@@ -780,6 +782,10 @@ h1 {
     height: 192px;
     width: 79%;
     margin-bottom: 58px; } }
+@media screen and (min-width: 992px) {
+  .sale__img {
+    height: 253px;
+    margin-bottom: 63px; } }
 @media screen and (min-width: 1200px) {
   .sale__img {
     width: 80%;
@@ -972,10 +978,6 @@ h1 {
     min-width: 44%; } }
 /*750*/
 /*970*/
-@media screen and (min-width: 992px) {
-  .sale__img {
-    height: 253px;
-    margin-bottom: 63px; } }
 /*1170*/
 
 /*# sourceMappingURL=main.css.map */
