@@ -4,11 +4,10 @@
     margin: 0 auto;
     background: #fff;
     font-size: 10px;
-}
-
-.sender a {
-    color: #000;
-    text-decoration: none;
+        & a {
+            color: #000;
+            text-decoration: none;
+        }
 }
 
 .send {
@@ -34,7 +33,7 @@
     background: #000;
     padding-top: 20px;
     padding-bottom: 25px;
-    color: #fff;
+    color: $mainColor;
 }
 
 .header_burger {
@@ -74,7 +73,7 @@
     width: 40px;
     height: 2px;
     margin-bottom: 6px;
-    background-color: #fff;
+    background-color: $mainColor;
 }
 
 .burger_button {
@@ -84,6 +83,10 @@
 
 .header_burger span:last-child {
     margin-bottom: 0px;
+}
+
+.btm_menu {
+    @include uppercase();
 }
 
 .header__btm_menu {
@@ -108,7 +111,7 @@
     display: block;
     text-align: center;
     font-size: 18px;
-    color: #fff;
+    color: $mainColor;
     text-decoration: none;
 }
 
@@ -270,9 +273,9 @@
 @media screen and (min-width: 1200px) {
 
     .form_search input[type="search"] {
-        border-bottom: 1px solid #fff;
+        border-bottom: 1px solid $mainColor;
         background: transparent;
-        color: #fff;
+        color: $mainColor;
     }
 
     .form_search {

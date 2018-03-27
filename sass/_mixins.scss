@@ -1,0 +1,7 @@
+@mixin listReset(){
+	list-style: none;
+}
+
+@mixin uppercase(){
+	text-transform: uppercase;
+}

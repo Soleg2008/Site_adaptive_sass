@@ -1,74 +1,65 @@
-.footer_ul {
-    margin: 0;
-    padding: 0;
-    text-transform: uppercase;
-    line-height: 1.67;
-}
-
 .footer {
     padding-top: 45px;
     padding-bottom: 50px;
     background-color: #000;
-    color: #fff;
+    color: $mainColor;
+        &_ul {
+            margin: 0;
+            padding: 0;
+            text-transform: uppercase;
+            line-height: 1.67;
+        }
+        &_li {
+                & a {
+                    text-decoration: none;
+                    color: $mainColor;
+                    }                   
+        }
+        &_inner {
+            width: 280px;
+            margin: 0 auto;
+        }
+        &_button {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            border: 1px solid;
+            text-align: center;
+            text-transform: uppercase;
+            width: 150px;
+}
+        &_menu {
+            padding: 0;
+            font-size: 12px;
+            margin-bottom: 50px;
+}
+        &_tel {
+            text-transform: none;
+}
 }
 
-.footer_li {
-    list-style: none;
-}
 
-.footer_li a {
-    text-decoration: none;
-    color: #fff;
-}
 
 .flex_container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-}
-
-.flex_container_left {
-    display: flex;
-    flex: 0 0 45%;
-    min-width: 45%;
-    flex-direction: column;
-}
-
-.flex_container_right {
-    flex: 0 0 55%;
-    min-width: 55%;
-}
-
-.footer_inner {
-    width: 280px;
-    margin: 0 auto;
-}
-
-.footer_button {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    border: 1px solid;
-    text-align: center;
-    text-transform: uppercase;
-    width: 150px;
-}
-
-.footer_menu {
-    padding: 0;
-    font-size: 12px;
-    margin-bottom: 50px;
-}
-
-.footer_tel {
-    text-transform: none;
+        &_left {
+            display: flex;
+            flex: 0 0 45%;
+            min-width: 45%;
+            flex-direction: column;
+    }
+        &_right {
+            flex: 0 0 55%;
+            min-width: 55%;
+    }
 }
 
 .developer {
     font-size: 12px;
-}
-
-.developer a {
-    color: #fff;
+        & a {
+            color: $mainColor
+        }
 }
 
 @media screen and (min-width: 480px) {
@@ -84,12 +75,12 @@
         padding-top: 45px;
         padding-bottom: 100px;
         background-color: #000;
-        color: #fff;
+        color: $mainColor;
     }
 
     .footer_li a {
         text-decoration: none;
-        color: #fff;
+        color: $mainColor;
     }
 
     .footer_inner {
@@ -130,11 +121,10 @@
 
     .developer {
         font-size: 18px;
-    }
-
-    .developer a {
-        color: #fff;
-    }
+            & a {
+             color: $mainColor;
+            }
+        }
 }
 @media screen and (min-width: 768px) {
     

@@ -7,14 +7,16 @@ body {
 	font-family: 'PT Sans', sans-serif;
 }
 
+$mainColor: #fff;
+
 .container {
 		min-width: 320px;
         margin: 0 auto;
         padding: 0px 15px;
         	&:after {
-	display: table;
-	content: '';
-	clear: both;
+				display: table;
+				content: '';
+				clear: both;
 }
 }
 
@@ -33,6 +35,7 @@ body {
 }
 
 ul {
+	@include listReset();
 	margin: 0;
 	padding: 0;
 }
@@ -41,6 +44,3 @@ h1 {
 	margin:0;
 }
 
-.listReset {
-	list-style: none;
-}

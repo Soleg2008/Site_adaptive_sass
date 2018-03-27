@@ -19,36 +19,32 @@
     height: auto;
 }
 
-.thumb_main:nth-child(2) {
-    display: none;
-}
-
-.thumb_main:last-child {
-    display: none;
-}
-
 .thumb_main {
     margin: 0 auto;
     margin-bottom: 60px;
     width: 77%;
     text-align: center;
     line-height: 1.7;
+    &:nth-child(2) {
+    display: none;
+}
+    &:last-child {
+    display: none;
+}
 }
 
 
 .th {
     margin-bottom: 31px;
-}
-
-.th_text a {
-    color: #000;
-    text-decoration: none;
-    line-height: 1.7;
-    font-weight: bold;
-}
-
-.th_price {
-    font-weight: bold;
+        &_text a {
+        color: #000;
+        text-decoration: none;
+        line-height: 1.7;
+        font-weight: bold;
+    }
+        &_price {
+        font-weight: bold;
+    }
 }
 
 .price {
@@ -64,11 +60,11 @@
     font-size: 18px;
     text-align: center;
     padding: 10px;
+        & a {
+        color: #b0ac9c;
+        text-decoration: none;
+         @include uppercase();
 }
-
-.button a {
-    color: #b0ac9c;
-    text-decoration: none;
 }
 
 @media screen and (min-width: 480px) {
@@ -86,21 +82,18 @@
 
     .thumb {
         text-align: center;
+            &_img {
+                margin-bottom: 26px;
     }
-
-    .thumb_img {
-        margin-bottom: 26px;
+            &_text {
+                font-size: 14px;
     }
-
-    .thumb_text {
-        font-size: 14px;
+            &_all {
+                width: 79%;
+                margin: 0 auto;
+                margin-bottom: 37px;
+                font-size: 0px;
     }
-
-    .thumb_all {
-        width: 79%;
-        margin: 0 auto;
-        margin-bottom: 37px;
-        font-size: 0px;
     }
 
     .thumb_main {
@@ -109,16 +102,14 @@
         margin: 0;
         margin-right: 20px;
         line-height: 2;
+        &:nth-child(2) {
+            display: block;
     }
-
-    .thumb_main:nth-child(2) {
-        display: block;
+        &:last-child {
+            display: block;
+            margin-right: 0;
     }
-
-    .thumb_main:last-child {
-        display: block;
-        margin-right: 0;
-    }
+}    
 }
 
 @media screen and (min-width: 992px) {
